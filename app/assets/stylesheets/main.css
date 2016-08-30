@@ -4,7 +4,6 @@ body {
 
 dl{
   width: 100%;
-  overflow: hidden;
 }
 
 dt {
@@ -24,10 +23,29 @@ dd {
   width: 80%;
   border-radius: 5px;
   padding: 5px 10px;
+  display: inline-block;
 }
 
 
 #title{
   color: #ccc;
 
+}
+
+label{
+  display: inline-block;
+  width: 100px;
+}
+
+.left{
+  display: inline-block;
+  float: left;
+  width: 30%;
+  font-weight: bold;
+}
+
+.right{
+  display: inline-block;
+  float: right;
+  width: 70%
 }

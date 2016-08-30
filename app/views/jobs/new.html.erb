@@ -1,0 +1,25 @@
+<div class="form_new">
+  <%= form_for @job do |f|%>
+    <p><%= f.label :title, 'Título:' %>
+    <%= f.text_field :title%> </p>
+    <p>
+      <%= f.label :company, 'Empresa:' %>
+      <%= f.text_field :company%>
+    </p>
+    <p>
+      <%= f.label :location, 'Localização:' %>
+      <%= f.text_field :location%>
+
+    </p>
+    <p>
+      <%= f.label :category, 'Categoria:' %>
+      <%= f.text_field :category%>
+    </p>
+    <p>
+      <%= f.label :description, 'Descrição:' %>
+      <%= f.text_area :description%>
+    </p>
+    
+    <%= f.submit 'Criar Vaga'%>
+  <% end %>
+</div>

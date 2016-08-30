@@ -2,11 +2,11 @@
   <div class="vaga">
     <h1><%=link_to(job.title,job)%></h1>
     <hr>
-    <dl>
-      <dt>Empresa</dt>
-      <dd><%= job.company %></dd>
-      <dt>Localização</dt>
-      <dd><%= job.location %></dd>
+
+    <p class='left'>Empresa</p>
+    <p class='right'><%= job.company %></p>
+    <p class="left">Localização</p>
+    <p class='right'><%= job.location %></p>
     </dl>
   </div>
 <% end %>
