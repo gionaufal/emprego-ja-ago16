@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+
+dt {
+  font-weight: bold;
+
+}
+
+dd {
+  padding-left: 70px;
+}
+
+.vaga{
+  background-color: #ccc;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
