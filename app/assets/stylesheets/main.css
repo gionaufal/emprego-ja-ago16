@@ -2,18 +2,32 @@ body {
   font-family: sans-serif;
 }
 
+dl{
+  width: 100%;
+  overflow: hidden;
+}
+
 dt {
   font-weight: bold;
+  float: left;
+  width: 30%;
 
 }
 
 dd {
   padding-left: 70px;
+  float: right;
+  width: 70%;
 }
 
 .vaga{
-  background-color: #ccc;
-  width: 200px;
+  width: 80%;
   border-radius: 5px;
   padding: 5px 10px;
+}
+
+
+#title{
+  color: #ccc;
+
 }

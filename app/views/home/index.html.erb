@@ -1,6 +1,7 @@
 <% @jobs.each do |job| %>
   <div class="vaga">
-    <h1><%= job.title %></h1>
+    <h1><%=link_to(job.title,job)%></h1>
+    <hr>
     <dl>
       <dt>Empresa</dt>
       <dd><%= job.company %></dd>
