@@ -19,7 +19,10 @@
       <%= f.label :description, 'Descrição:' %>
       <%= f.text_area :description%>
     </p>
-    
+    <p><%=f.label :featured, 'Destaque' %>
+      <%= f.check_box :featured%>
+    </p>
     <%= f.submit 'Criar Vaga'%>
+
   <% end %>
 </div>

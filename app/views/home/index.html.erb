@@ -7,6 +7,12 @@
     <p class='right'><%= job.company %></p>
     <p class="left">Localização</p>
     <p class='right'><%= job.location %></p>
+
+    <% if job.featured? %>
+      <p class="left"><strong>Destaque</strong></p>
+    <% end %>
+
+
     </dl>
   </div>
 <% end %>
