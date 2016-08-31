@@ -4,7 +4,7 @@
     <%= f.text_field :title%> </p>
     <p>
       <%= f.label :company_id, 'Empresa:' %>
-      <%= f.collection_select(:company_id, Company.all, :id, :name, prompt:'Selecione uma empresa') %>
+      <%= f.collection_select(:company_id, @companies, :id, :name, prompt:'Selecione uma empresa') %>
     </p>
     <p>
       <%= f.label :location, 'Localização:' %>
