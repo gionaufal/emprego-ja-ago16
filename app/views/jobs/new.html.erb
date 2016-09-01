@@ -1,3 +1,8 @@
+
+<% if flash[:notice] %>
+   <div class="notice"><%= flash[:notice] %></div>
+ <% end %>
+
 <div class="form_new">
   <%= form_for @job do |f|%>
     <p><%= f.label :title, 'Título:' %>
