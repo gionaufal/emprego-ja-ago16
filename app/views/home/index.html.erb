@@ -12,7 +12,11 @@
       <p class="left"><strong>Destaque</strong></p>
     <% end %>
 
-
-    </dl>
   </div>
 <% end %>
+
+<section class='companies'>
+  <% @companies.each do |company| %>
+    <p><%= link_to company.name, company_path(company)%></p>
+  <% end %>
+</section>

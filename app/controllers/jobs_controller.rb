@@ -6,7 +6,6 @@ class JobsController < ApplicationController
   end
 
   def new
-    @button = "Criar Vaga"
     @job = Job.new
     @companies = Company.all
   end
@@ -24,7 +23,6 @@ class JobsController < ApplicationController
   end
 
   def edit
-    @button = "Atualizar Vaga"
     @companies = Company.all
   end
 

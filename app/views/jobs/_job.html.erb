@@ -1,0 +1,18 @@
+<div class="vaga">
+  <h1><%=job.title%></h1>
+  <hr>
+
+  <p class="left">Empresa</p>
+  <p class="right"><%= job.company.name %></p>
+  <p class="left">Localização</p>
+  <p class="right"><%= job.location %></p>
+  <p class="left">Categoria</p>
+  <p class="right"><%= job.category %></p>
+  <p class="left">Descrição Completa</p>
+  <p class="right"><%= job.description %></p>
+
+  <% if job.featured? %>
+    <p class="left"><strong>Destaque</strong></p>
+  <% end %>
+
+</div>

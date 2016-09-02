@@ -1,17 +1,6 @@
-
 <div class="vaga">
   <h1><%=@job.title%></h1>
   <hr>
-  <!-- <dl>
-    <dt>Empresa</dt>
-    <dd><%= @job.company %></dd>
-    <dt>Localização</dt>
-    <dd><%= @job.location %></dd>
-    <dt>Categoria</dt>
-    <dd><%= @job.category %></dd>
-    <dt>Descrição Completa</dt>
-    <dd><%= @job.description %></dd>
-  </dl> -->
 
   <p class="left">Empresa</p>
   <p class="right"><%= @job.company.name %></p>
@@ -27,4 +16,5 @@
   <% end %>
 
 </div>
+
 <p><%=link_to('Voltar',root_path)%> </p>
