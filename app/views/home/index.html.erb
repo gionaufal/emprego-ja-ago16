@@ -1,21 +1,24 @@
-<% @jobs.each do |job| %>
-  <div class="vaga">
-    <h1><%=link_to(job.title,job)%></h1>
-    <hr>
+<section class='vagas col-md-10'>
+  <% @jobs.each do |job| %>
+    <div class="vaga col-sm-6">
+      <h1><%=link_to(job.title,job)%></h1>
 
-    <p class='left'>Empresa</p>
-    <p class='right'><%= job.company.name %></p>
-    <p class="left">Localização</p>
-    <p class='right'><%= job.location %></p>
+      <p class='left'>Empresa</p>
+      <p class='right'><%= job.company.name %></p>
+      <p class="left">Localização</p>
+      <p class='right'><%= job.location %></p>
 
-    <% if job.featured? %>
-      <p class="left"><strong>Destaque</strong></p>
-    <% end %>
+      <% if job.featured? %>
+        <p class="left"><strong>Destaque</strong></p>
+      <% end %>
 
-  </div>
-<% end %>
+    </div>
+  <% end %>
+</section>
 
-<section class='companies'>
+
+<section class='companies col-md-2'>
+  <h2>Empresas</h2>
   <% @companies.each do |company| %>
     <p><%= link_to company.name, company%></p>
   <% end %>
