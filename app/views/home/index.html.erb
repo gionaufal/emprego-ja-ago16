@@ -17,6 +17,6 @@
 
 <section class='companies'>
   <% @companies.each do |company| %>
-    <p><%= link_to company.name, company_path(company)%></p>
+    <p><%= link_to company.name, company%></p>
   <% end %>
 </section>

@@ -12,8 +12,8 @@
 
     </p>
     <p>
-      <%= f.label :category, 'Categoria:' %>
-      <%= f.text_field :category%>
+      <%= f.label :category_id, 'Categoria:' %>
+      <%= f.collection_select :category_id, Category.all, :id, :name, prompt:'Selecione uma categoria'  %>
     </p>
     <p>
       <%= f.label :description, 'Descrição:' %>
