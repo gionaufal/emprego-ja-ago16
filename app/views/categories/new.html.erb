@@ -1,0 +1,19 @@
+<h1>Nova Categoria</h1>
+
+<% if flash[:error] %>
+  <p><%= flash[:error] %></p>
+<% end %>
+
+
+<%= form_for @category do |f|%>
+  <p>
+    <%= f.label :name, 'Nome' %>
+    <%= f.text_field :name%>
+  </p>
+
+  <p>
+    <%= f.submit 'Criar Categoria', class: 'btn-success btn'  %>
+  </p>
+
+
+<% end %>
