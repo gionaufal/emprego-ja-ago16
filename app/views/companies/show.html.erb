@@ -1,12 +1,21 @@
 <div class="company">
 
-  <h1> <%= @company.name %></h1>
+
+  <h1> <%= @company.name %>
+    <% if @company.premium? %>
+      <%= image_tag 'estrela.png' %>
+    <% end %>
+  </h1>
+
   <p class="left">Localização</p>
   <p class="right"><%= @company.location %></p>
   <p class="left">Email</p>
   <p class="right"><%= @company.mail %></p>
   <p class="left">Telefone</p>
   <p class="right"><%= @company.phone %></p>
+
+
+
 </div>
 
 
