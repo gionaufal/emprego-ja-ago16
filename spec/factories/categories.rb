@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :category_id do
+  factory :category do
     name 'Desenvolvedor'
   end
 end
