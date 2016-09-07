@@ -1,0 +1,26 @@
+<% if flash[:error] %>
+   <div class="notice"><%= flash[:error] %></div>
+ <% end %>
+
+<div class="form_new">
+  <%= form_for @company do |f| %>
+    <p><%= f.label :name, 'Nome:' %>
+    <%= f.text_field :name%> </p>
+    <p>
+      <%= f.label :location, 'Localização:' %>
+      <%= f.text_field :location%>
+
+    </p>
+    <p>
+      <%= f.label :mail, 'Email:' %>
+      <%= f.text_field :mail%>
+    </p>
+    <p>
+      <%= f.label :phone, 'Telefone:' %>
+      <%= f.text_field :phone%>
+    </p>
+
+    <%= f.submit submit_btn, class:'btn btn-success'%>
+
+  <% end %>
+</div>

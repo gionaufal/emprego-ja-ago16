@@ -2,10 +2,7 @@ require 'rails_helper'
 
 feature 'User create companies' do
   scenario 'successfully' do
-    company = Company.new(name: 'Campus Code',
-                          location: 'São Paulo',
-                          mail: 'contato@campus.com.br',
-                          phone: '2369-3476')
+    company = build(:company)
 
     visit new_company_path
 
@@ -21,4 +18,16 @@ feature 'User create companies' do
     expect(page).to have_content(company.mail)
     expect(page).to have_content(company.phone)
   end
+  scenario 'should fill all fields' do
+    company = build(:company)
+
+    visit new_company_path
+
+    click_on 'Criar Empresa'
+
+    expect(page).to have_content 'Preencha todos os campos'
+  end
+
+
+
 end
